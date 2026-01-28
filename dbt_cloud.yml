@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "bo356.us1.dbt.com"
+  active-project: "70471823545697"
+projects:
+  - project-name: "Analytics-test"
+    project-id: "70471823545697"
+    account-name: "NP Learning Inc"
+    account-id: "70471823527359"
+    account-host: "bo356.us1.dbt.com"
+    token-name: "cloud-cli-c00c"
+    token-value: "dbtu_L6oaKKwSawSSetCo_g1xuQ2kUSEybd1Dm2PnbCKyrW71anWy2w"
+
+
