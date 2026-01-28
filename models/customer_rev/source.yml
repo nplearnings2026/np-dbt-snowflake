@@ -16,7 +16,9 @@ sources:
     # Generate model
       - name: employees
         identifier: employees
-
+    # Generate model
+      - name: products
+        identifier: products
 
 
 
