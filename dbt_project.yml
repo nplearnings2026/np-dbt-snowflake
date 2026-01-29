@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'np-dbt-snowflake'
 version: '1.0.0'
 config-version: 2
 
@@ -36,7 +36,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
+  np-dbt-snowflake:
+    customer_rev:
+      orders_stg:
+        +schema: L1_STAGE
+        +materialized: view
+      customers_stg:
+        +schema: L1_STAGE
+        +materialized: view
+      orderitems_stg:
+        +schema: L1_STAGE
+        +materialized: view
+      orders_fact:
+        +schema: L1_FACTS
+        +materialized: table
+      customerrevenue:
+        +schema: L1_REPORTING
+        +materialized: table
