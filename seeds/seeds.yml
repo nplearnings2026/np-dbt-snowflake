@@ -1,0 +1,17 @@
+seeds: 
+  - name: salestarget
+    config: 
+      enabled: true
+      schema: L1_SEEDS
+      materialized: view
+      column_types:
+          StoreID: number
+          SalesTarget: number
+  - name: tmpseed
+    config: 
+      enabled: true
+      schema: L1_SEEDS
+      materialized: view
+      column_types:
+          Id: number
+          Name: varchar(20)
