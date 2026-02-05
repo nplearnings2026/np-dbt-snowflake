@@ -3,7 +3,7 @@ seeds:
     config: 
       enabled: true
       schema: L1_SEEDS
-      materialized: view
+      materialized: seed
       column_types:
           StoreID: number
           SalesTarget: number
@@ -11,7 +11,7 @@ seeds:
     config: 
       enabled: true
       schema: L1_SEEDS
-      materialized: view
+      materialized: seed
       column_types:
           Id: number
           Name: varchar(20)
