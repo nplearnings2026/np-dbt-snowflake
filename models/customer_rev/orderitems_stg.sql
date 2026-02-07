@@ -1,3 +1,6 @@
+{{ config(
+    schema='L1_STAGE'
+) }}
 SELECT
     OrderItemID,
     OrderID,

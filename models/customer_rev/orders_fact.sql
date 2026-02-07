@@ -1,5 +1,7 @@
-{{ config(materialized='table') }}    
-
+{{ config(
+    schema='L1_FACTS', materialized='table'
+) }}
+ 
 SELECT
     O.OrderID,
     O.OrderDate,

@@ -1,4 +1,6 @@
-{{  config(materialized='view')    }}
+{{ config(
+    schema='L1_STAGE'
+) }}
 
 SELECT
     CustomerID,
