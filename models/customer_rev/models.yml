@@ -1,0 +1,11 @@
+version: 2
+
+
+models:
+ - name: customers_stg
+   description: "Staged customer data from order management system (OMS), with minor row-level transformations."
+   columns:
+    - name: Email
+      description: "Customer's Primay Email address for promotions and offers."
+      tests:
+         - string_not_empty
