@@ -33,6 +33,9 @@ models:
       orderitems_stg:
         +schema: 'L1_STAGE'
         +materialized: view
+      employees_stg:
+        +schema: 'L1_STAGE'
+        +materialized: view
       orders_fact:
         +schema: 'L1_FACTS'
         +materialized: table
