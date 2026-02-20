@@ -28,7 +28,16 @@ models:
           - not_null
   
   - name: StatusCD
-    description: "{{ doc('StatusCD') }}"    
     tests:
       - accepted_values:
           values: ['01', '02', '03']
+
+  - name: orderitems_stg
+    description: Staged order items data from order management system (oms), with minor row-level transformations.   
+    columns:
+      - name: OrderID
+        tests:
+          - relationships:
+              arguments:
+                to: ref('orders_stg')
+                field: OrderID

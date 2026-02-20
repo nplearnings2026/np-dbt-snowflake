@@ -2,21 +2,31 @@ sources:
   - name: landing
     database: SLEEKMART_OMS
     schema: L1_LANDING
+    config:
+      freshness:
+        warn_after: {count: 1, period: hour}
+        error_after: {count: 2, period: hour}
+      loaded_at_field: Updated_at
 
     tables:
     # Generate model
       - name: customers
+        description: The customers table from order management system(OMS).  
         identifier: customers 
     # Generate model
       - name: orders
+        description: The orders table from order management system(OMS).
         identifier: orders
     # Generate model
       - name: orderitems
+        description: The order items table from order management system(OMS).
         identifier: orderitems
     # Generate model
       - name: employees
+        description: The employees table from order management system(OMS).
         identifier: employees
     # Generate model
       - name: products
+        description: The products table from order management system(OMS).
         identifier: products
 
